@@ -90,7 +90,7 @@ from decouple import config
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'BRECLAMO',
+#         'NAME': 'BASRECLAM',
 #         'USER': 'postgres',
 #         'PASSWORD': 'luma7078',
 #         'HOST': '127.0.0.1',
