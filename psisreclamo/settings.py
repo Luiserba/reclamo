@@ -88,25 +88,25 @@ from decouple import config
 # lo desmarco para hacer nuevas migraciones y luego lo asterisqueo
 
 #""" desarrollo
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'BASRECLAM',
-        'USER': 'postgres',
-        'PASSWORD': 'luma7078',
-        'HOST': '127.0.0.1',
-        'DATABASE_PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'BASRECLAM',
+#         'USER': 'postgres',
+#         'PASSWORD': 'luma7078',
+#         'HOST': '127.0.0.1',
+#         'DATABASE_PORT': '5432',
+#     }
+# }
 
 #"""
 
 # produccion
-# DATABASES = { 
-#    'default': dj_database_url.config(
-#       default=config('DATABASE_URL')
-#    )
-# }
+DATABASES = { 
+   'default': dj_database_url.config(
+      default=config('DATABASE_URL')
+   )
+}
 
 
 
