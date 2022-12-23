@@ -24,12 +24,12 @@ SECRET_KEY = 'jb6juc2yo4@=6fy6it5f$kq+7=fwe@vov$i3my2ud6zg@5dv_l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False  # ojo en produccion false
-#DEBUG = True   # ojo en desarrollo true
+#DEBUG = False  # ojo en produccion false
+DEBUG = True   # ojo en desarrollo true
 
 
 ALLOWED_HOSTS = ['*','web-production-21ef.up.railway.app','127.0.0.1',]
-                 
+#ALLOWED_HOSTS = []                 
 
 
 # Application definition
@@ -88,17 +88,34 @@ from decouple import config
 # lo desmarco para hacer nuevas migraciones y luego lo asterisqueo
 
 #""" desarrollo
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'BASRECLAM',
+#         'USER': 'postgres',
+#         'PASSWORD': 'luma7078',
+#         'HOST': '127.0.0.1',
+#         'DATABASE_PORT': '5432',
+#     }
+# }
+
+#""" desarrollo
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'BASRECLAM',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'luma7078',
-        'HOST': '127.0.0.1',
-        'DATABASE_PORT': '5432',
+        'PASSWORD': 's0KLuu6OqlpgJWzvqyLg',
+        'HOST': 'containers-us-west-60.railway.app',
+        'DATABASE_PORT': '7974',
     }
 }
 
+
+
+#DATABASE_URL=postgresql://${{ postgres }}:${{ s0KLuu6OqlpgJWzvqyLg }}@${{ containers-us-west-60.railway.app }}:${{ 7974 }}/${{ railway }}
+#DATABASE_URL=postgresql://postgres:s0KLuu6OqlpgJWzvqyLg@containers-us-west-60.railway.app:7974/railway
+#DATABASE_URL=postgresql://postgres:s0KLuu6OqlpgJWzvqyLg@containers-us-west-60.railway.app:7974/railway
 #"""
 
 # produccion
