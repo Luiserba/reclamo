@@ -28,9 +28,9 @@ SECRET_KEY = 'jb6juc2yo4@=6fy6it5f$kq+7=fwe@vov$i3my2ud6zg@5dv_l'
 DEBUG = True   # ojo en desarrollo true
 
 
-ALLOWED_HOSTS = ['*','django-server-production-68e0.up.railway.app','127.0.0.1',]
+#ALLOWED_HOSTS = ['*','django-server-production-68e0.up.railway.app','127.0.0.1',]
 
-#ALLOWED_HOSTS = []                 
+ALLOWED_HOSTS = ['*']                 
 
 
 # Application definition
@@ -89,28 +89,28 @@ from decouple import config
 # lo desmarco para hacer nuevas migraciones y luego lo asterisqueo
 
 #""" desarrollo
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'BASRECLAM',
-#         'USER': 'postgres',
-#         'PASSWORD': 'luma7078',
-#         'HOST': '127.0.0.1',
-#         'DATABASE_PORT': '5432',
-#     }
-# }
-
-#""" desarrollo
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'BASRECLAM',
         'USER': 'postgres',
-        'PASSWORD': 'vfXwcDINvJEFuohiQPZE',
-        'HOST': 'containers-us-west-95.railway.app',
-        'DATABASE_PORT': '7335',
+        'PASSWORD': 'luma7078',
+        'HOST': '127.0.0.1',
+        'DATABASE_PORT': '5432',
     }
 }
+
+#""" desarrollo
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'vfXwcDINvJEFuohiQPZE',
+#         'HOST': 'containers-us-west-95.railway.app',
+#         'DATABASE_PORT': '7335',
+#     }
+# }
 
 
 
