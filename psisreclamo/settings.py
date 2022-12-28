@@ -24,11 +24,12 @@ SECRET_KEY = 'jb6juc2yo4@=6fy6it5f$kq+7=fwe@vov$i3my2ud6zg@5dv_l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-#DEBUG = False  # ojo en produccion false
-DEBUG = True   # ojo en desarrollo true
+DEBUG = False  # ojo en produccion false
+#DEBUG = True   # ojo en desarrollo true
 
 
-ALLOWED_HOSTS = ['*','web-production-21ef.up.railway.app','127.0.0.1',]
+ALLOWED_HOSTS = ['*','django-server-production-68e0.up.railway.app','127.0.0.1',]
+
 #ALLOWED_HOSTS = []                 
 
 
@@ -105,9 +106,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 's0KLuu6OqlpgJWzvqyLg',
-        'HOST': 'containers-us-west-60.railway.app',
-        'DATABASE_PORT': '7974',
+        'PASSWORD': 'vfXwcDINvJEFuohiQPZE',
+        'HOST': 'containers-us-west-95.railway.app',
+        'DATABASE_PORT': '7335',
     }
 }
 
