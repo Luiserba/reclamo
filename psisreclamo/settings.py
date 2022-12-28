@@ -89,28 +89,28 @@ from decouple import config
 # lo desmarco para hacer nuevas migraciones y luego lo asterisqueo
 
 #""" desarrollo
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'BASRECLAM',
-        'USER': 'postgres',
-        'PASSWORD': 'luma7078',
-        'HOST': '127.0.0.1',
-        'DATABASE_PORT': '5432',
-    }
-}
-
-#""" desarrollo
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'railway',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'BASRECLAM',
 #         'USER': 'postgres',
-#         'PASSWORD': 'vfXwcDINvJEFuohiQPZE',
-#         'HOST': 'containers-us-west-95.railway.app',
-#         'DATABASE_PORT': '7335',
+#         'PASSWORD': 'luma7078',
+#         'HOST': '127.0.0.1',
+#         'DATABASE_PORT': '5432',
 #     }
 # }
+
+#""" desarrollo
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'vfXwcDINvJEFuohiQPZE',
+        'HOST': 'containers-us-west-95.railway.app',
+        'DATABASE_PORT': '7335',
+    }
+}
 
 
 
