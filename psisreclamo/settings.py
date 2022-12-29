@@ -88,10 +88,12 @@ from decouple import config
 
 # lo desmarco para hacer nuevas migraciones y luego lo asterisqueo
 
+#'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
 #""" desarrollo
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'ENGINE': 'django.db.backends.postgresql',
 #         'NAME': 'BASRECLAM',
 #         'USER': 'postgres',
 #         'PASSWORD': 'luma7078',
