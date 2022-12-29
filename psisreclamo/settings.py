@@ -28,9 +28,9 @@ SECRET_KEY = 'jb6juc2yo4@=6fy6it5f$kq+7=fwe@vov$i3my2ud6zg@5dv_l'
 DEBUG = True   # ojo en desarrollo true
 
 
-#ALLOWED_HOSTS = ['*','django-server-production-68e0.up.railway.app','127.0.0.1',]
+ALLOWED_HOSTS = ['*','django-server-production-68e0.up.railway.app','127.0.0.1',]
 
-ALLOWED_HOSTS = ['*']                 
+#ALLOWED_HOSTS = ['*']                 
 
 
 # Application definition
